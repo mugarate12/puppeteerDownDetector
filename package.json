@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "deploy": "npx serverless deploy --verbose",
+    "remove": "npx serverless remove --verbose",
+    "removeAndDeploy": "npm run remove && npm run deploy"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^13.5.2",
+    "puppeteer-extra": "^3.2.3"
+  }
+}

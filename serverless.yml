@@ -24,7 +24,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: sa-east-1
-  memorySize: 1024
+  memorySize: 1536
   httpApi:
     cors: true
 
@@ -55,6 +55,9 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**
 #package:
 #  patterns:
 #    - '!exclude-me.js'
@@ -120,3 +123,6 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+
+# plugins:
+#   - serverless-plugin-chrome
