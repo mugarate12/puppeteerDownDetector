@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
+    "moment-timezone": "^0.5.34",
     "puppeteer-core": "^13.5.2",
     "puppeteer-extra": "^3.2.3"
   }
